@@ -3,48 +3,58 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/background.jpg'); /* Укажите путь к картинке */
-    background-size: cover; /* Растягиваем картинку на весь экран */
-    background-position: center; /* Центрируем картинку */
-    background-attachment: fixed; /* Фон остаётся неподвижным при прокрутке */
-    color: #ffffff; /* Белый цвет текста */
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff; /* Белый текст */
     line-height: 1.6;
 }
+/* Центрируем контент */
+.container {
+    max-width: 1200px; /* Ограничиваем ширину контента */
+    margin: 0 auto; /* Центрируем */
+    padding: 20px;
+}
+/* Увеличиваем текст */
 h1 {
-    font-size: 2.5rem; /* Увеличиваем заголовок */
+    font-size: 3rem; /* Большой заголовок */
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2rem; /* Увеличиваем подзаголовок */
+    font-size: 2.5rem; /* Средний заголовок */
+    margin-bottom: 15px;
 }
 
 p {
-    font-size: 1.2rem; /* Увеличиваем основной текст */
+    font-size: 1.2rem; /* Основной текст */
+    margin-bottom: 15px;
 }
 
 /* Для мобильных устройств */
 @media (max-width: 600px) {
     h1 {
-        font-size: 2rem; /* Уменьшаем заголовок на маленьких экранах */
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.5rem; /* Уменьшаем подзаголовок */
+        font-size: 1.8rem;
     }
 
     p {
-        font-size: 1rem; /* Уменьшаем основной текст */
+        font-size: 1rem;
     }
 
-    main {
-        padding: 10px; /* Уменьшаем отступы */
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        max-width: 100%;
     }
 }
 
-header button {
-    padding: 10px 20px;
-    font-size: 1rem;
-}
 
 @media (max-width: 600px) {
     header button {
@@ -154,11 +164,13 @@ section h2 {
     margin: 0;
 }
 
-/* Форма обратной связи */
+/* Стили для формы */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 form input, form textarea {
@@ -166,6 +178,7 @@ form input, form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
 }
 
 form button {
@@ -182,6 +195,7 @@ form button {
 form button:hover {
     background-color: #0056b3;
 }
+
 
 /* Футер */
 footer {
