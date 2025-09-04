@@ -1,0 +1,202 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg'); /* Укажите путь к картинке */
+    background-size: cover; /* Растягиваем картинку на весь экран */
+    background-position: center; /* Центрируем картинку */
+    background-attachment: fixed; /* Фон остаётся неподвижным при прокрутке */
+    color: #ffffff; /* Белый цвет текста */
+    line-height: 1.6;
+}
+h1 {
+    font-size: 2.5rem; /* Увеличиваем заголовок */
+}
+
+h2 {
+    font-size: 2rem; /* Увеличиваем подзаголовок */
+}
+
+p {
+    font-size: 1.2rem; /* Увеличиваем основной текст */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Уменьшаем заголовок на маленьких экранах */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Уменьшаем подзаголовок */
+    }
+
+    p {
+        font-size: 1rem; /* Уменьшаем основной текст */
+    }
+
+    main {
+        padding: 10px; /* Уменьшаем отступы */
+    }
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    header button {
+        padding: 8px 16px; /* Уменьшаем кнопки на маленьких экранах */
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.2rem; /* Средний размер заголовка */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Средний размер подзаголовка */
+    }
+
+    p {
+        font-size: 1.1rem; /* Средний размер текста */
+    }
+}
+
+
+/* Шапка */
+header {
+    background-color: rgba(0, 123, 255, 0.9); /* Синий фон с прозрачностью 90% */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Футер */
+footer {
+    background-color: rgba(51, 51, 51, 0.9); /* Тёмный фон с прозрачностью 90% */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header div {
+    margin-top: 10px;
+}
+
+header button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #004080;
+}
+
+/* Основной контент */
+main {
+    max-width: 800px; /* Ограничиваем ширину контента */
+    margin: 0 auto; /* Центрируем контент */
+    padding: 20px;
+}
+
+/* Стили для секций */
+section {
+    background-color: rgba(0, 0, 0, 0.6); /* Чёрный фон с прозрачностью 60% */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.step {
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Форма обратной связи */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

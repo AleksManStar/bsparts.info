@@ -1,0 +1,21 @@
+{
+  "headerTitle": "BSParts",
+  "welcomeText": "Добро пожаловать!",
+  "howToOrder": "Как заказать оригинальные запчасти",
+  "step1": "1. Отправьте запрос",
+  "step2": "2. Получите цену",
+  "step3": "3. Оплатите",
+  "step4": "4. Доставка",
+  "aboutUs": "О нас",
+  "specialize": "Мы специализируемся на поиске оригинальных автозапчастей",
+  "personalizedService": "Персонализированный сервис на каждом этапе",
+  "worldwideDelivery": "Доставка по всему миру с надёжностью",
+  "contactFormTitle": "Сравните цены",
+  "namePlaceholder": "Ваше имя",
+  "emailPlaceholder": "Ваш email",
+  "phonePlaceholder": "Ваш телефон",
+  "messagePlaceholder": "Описание запчасти",
+  "submitButton": "Отправить",
+  "footerContacts": "Контакты:",
+  "copyright": "© 2025 BSParts. Все права защищены."
+}
