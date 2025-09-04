@@ -3,171 +3,33 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/background.jpg');
+    background-image: url('images/background.jpg'); /* Фоновое изображение */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #ffffff; /* Белый цвет текста */
+    color: #ffffff; /* Белый текст */
     line-height: 1.6;
+    text-align: center; /* Центрируем текст */
 }
 
-/* Центрируем контент */
+/* Контейнер для центрирования */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Увеличиваем текст */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-/* Стили для секций */
-section {
-    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Стили для формы */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
-}
-
-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Адаптивность */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    form {
-        max-width: 100%;
-    }
-}
-
-
-/* Для мобильных устройств */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    form {
-        max-width: 100%;
-    }
-}
-
-
-@media (max-width: 600px) {
-    header button {
-        padding: 8px 16px; /* Уменьшаем кнопки на маленьких экранах */
-        font-size: 0.9rem;
-    }
-}
-
-
-/* Для планшетов */
-@media (min-width: 601px) and (max-width: 1024px) {
-    h1 {
-        font-size: 2.2rem; /* Средний размер заголовка */
-    }
-
-    h2 {
-        font-size: 1.8rem; /* Средний размер подзаголовка */
-    }
-
-    p {
-        font-size: 1.1rem; /* Средний размер текста */
-    }
-}
-
-
 /* Шапка */
 header {
-    background-color: rgba(0, 123, 255, 0.9); /* Синий фон с прозрачностью 90% */
-    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Футер */
-footer {
-    background-color: rgba(51, 51, 51, 0.9); /* Тёмный фон с прозрачностью 90% */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 header div {
@@ -175,7 +37,7 @@ header div {
 }
 
 header button {
-    background-color: #0056b3;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -187,51 +49,28 @@ header button {
 }
 
 header button:hover {
-    background-color: #004080;
+    background-color: #0056b3;
 }
 
 /* Основной контент */
-main {
-    max-width: 800px; /* Ограничиваем ширину контента */
-    margin: 0 auto; /* Центрируем контент */
-    padding: 20px;
-}
-
-/* Стили для секций */
 section {
-    background-color: rgba(0, 0, 0, 0.6); /* Чёрный фон с прозрачностью 60% */
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-
-section {
-    background-color: white;
-    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    color: #007bff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
-.step {
+section p {
+    font-size: 1.2rem;
     margin-bottom: 15px;
 }
 
-.step p {
-    font-size: 1.1rem;
-    margin: 0;
-}
-
-/* Стили для формы */
+/* Форма обратной связи */
 form {
     display: flex;
     flex-direction: column;
@@ -263,10 +102,9 @@ form button:hover {
     background-color: #0056b3;
 }
 
-
 /* Футер */
 footer {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.9); /* Полупрозрачный фон */
     color: white;
     text-align: center;
     padding: 10px;
@@ -280,4 +118,46 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    header button {
+        padding: 8px 16px; /* Уменьшаем кнопки на маленьких экранах */
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1.1rem;
+    }
 }

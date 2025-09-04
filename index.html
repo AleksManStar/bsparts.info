@@ -14,27 +14,39 @@
         }
     </style>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSParts</title>
     <link rel="stylesheet" href="styles.css">
     <p><i class="fas fa-car"></i> Мы специализируемся на поиске оригинальных автозапчастей</p>
 </head>
 <body>
-    <header>
-        <h1 id="headerTitle">BSParts</h1>
-        <div>
+    <header class="hero">
+    <div class="hero-content">
+        <h1>BSParts</h1>
+        <p>Оригинальные автозапчасти с доставкой по всему миру</p>
+        <div class="lang-buttons">
             <button id="langEn">EN</button>
             <button id="langRu">RU</button>
         </div>
-    </header>
+    </div>
+</header>
+
    <main class="container">
-    <section id="about-us">
-        <h2>О нас</h2>
-        <p><i class="fas fa-car"></i> Мы специализируемся на поиске оригинальных автозапчастей.</p>
-        <p><i class="fas fa-comments"></i> Персонализированный сервис на каждом этапе.</p>
-        <p><i class="fas fa-globe"></i> Доставка по всему миру с надёжностью.</p>
-    </section>
+    <section id="about-us" class="section">
+    <h2>О нас</h2>
+    <div class="features">
+        <div class="feature">
+            <i class="fas fa-car"></i>
+            <h3>Оригинальные запчасти</h3>
+            <p>Мы специализируемся на поиске оригинальных автозапчастей.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-globe"></i>
+            <h3>Доставка по всему миру</h3>
+            <p>Быстрая и надёжная доставка в любую точку мира.</p>
+        </div>
+    </div>
+</section>
+
 
     <section id="how-to-order">
         <h2>Как заказать</h2>
@@ -52,16 +64,17 @@
         </div>
     </section>
 
-    <section id="contact-form">
-        <h2>Свяжитесь с нами</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Ваше имя" required>
-            <input type="email" name="email" placeholder="Ваш email" required>
-            <input type="tel" name="phone" placeholder="Ваш телефон" required>
-            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
+    <section id="contact-form" class="section">
+    <h2>Свяжитесь с нами</h2>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
     </main>
 
     <footer>
