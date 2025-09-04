@@ -1,0 +1,8 @@
+bsparts-website/
+│
+├── index.html
+├── styles.css
+├── script.js
+├── images/
+│   └── background.jpg
+└── en.json, ru.json
